@@ -1,0 +1,100 @@
+@import "../../vars.css";
+
+.footerSection {
+  width: 100%;
+  padding: 35px 100px;
+  color: var(--textcolor);
+  background-color: var(--primarycolor);
+}
+
+.creditsPart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.credits,
+.marliaren {
+  font-size: 1.4rem;
+}
+
+.credits {
+  font-weight: 300;
+}
+
+.marliaren {
+  font-weight: 500;
+}
+
+/* social links */
+.socialLinks {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.socialLinksCircle {
+  padding: 9px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 1px var(--secondarytext);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 300ms;
+  /* transition: 0.5s; */
+}
+
+.socialLinksCircle svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--textcolor);
+}
+
+.socialLinksCircle:hover {
+  box-shadow: 0 0 5px 2px var(--secondarycolor);
+  background-color: var(--secondarytext);
+  fill: var(--primarycolor);
+}
+
+.socialLinksCircle:hover svg {
+  fill: var(--textwhite);
+}
+
+.connectBtn {
+  background-color: var(--secondarycolor);
+  color: var(--textcolor);
+  padding: 8px 13px;
+  width: fit-content;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all ease-in-out 300ms;
+}
+
+.connectBtn:hover {
+  background-color: var(--secondarytext);
+  color: var(--primarycolor);
+  box-shadow: 0 5px 5px var(--secondarycolor);
+}
+
+@media screen and (max-width: 800px) {
+  .creditsPart {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .credits,
+  .marliaren {
+    text-align: center;
+  }
+
+  .socialLinks {
+    justify-content: center;
+  }
+}

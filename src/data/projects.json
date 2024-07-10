@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Web-based Pharmacy Management System",
+    "imageSrc": "projects/pharmacy-system.png",
+    "description": "A centralized inventory management system developed for a pharmacy as part of our thesis project.",
+    "skills": ["HTML", "CSS", "JS", "MySQL", "PHP", "Python"],
+    "demo": "https://www.taylorspharmacy.tech",
+    "source": "https://github.com/marliaren/taylorspharma-system"
+  },
+  {
+    "title": "Vehicle Detection System Web Dashboard",
+    "imageSrc": "projects/web-dashboard.png",
+    "description": "A web dashboard for a vehicle detection system developed for a commissioned project (No demo)",
+    "skills": ["HTML", "CSS", "JS", "Firebase"],
+    "demo": "",
+    "source": "https://github.com/marliaren/vehicle-detection-dashboard"
+  },
+  {
+    "title": "Palindrome Checker",
+    "imageSrc": "projects/palindrome-checker.png",
+    "description": "A project which checks if a word is a palindrome or not, required by FCC to acquire JavaScript Algorithms and Data Structures Certification.",
+    "skills": ["HTML", "CSS", "JS"],
+    "demo": "https://marliaren.github.io/fcc-palindrome-checker/",
+    "source": "https://github.com/marliaren/fcc-palindrome-checker"
+  },
+  {
+    "title": "Roman Numeral Converter",
+    "imageSrc": "projects/roman-num-converter.png",
+    "description": "A project which converts Arabic numbers to Roman Numeral required by FCC to acquire JS Algorithms and Data Structures Certification.",
+    "skills": ["HTML", "CSS", "JS"],
+    "demo": "https://marliaren.github.io/fcc-roman-numeral-converter/",
+    "source": "https://github.com/marliaren/fcc-roman-numeral-converter"
+  },
+  {
+    "title": "OcularWear Shop Page",
+    "imageSrc": "projects/product-landing.png",
+    "description": "A simple product landing page for a made-up eyeglass shop developed for the projects required by FCC to acquire the Responsive Web Design Certification.",
+    "skills": ["HTML", "CSS"],
+    "demo": "https://marliaren.github.io/fcc-product-landing/",
+    "source": "https://github.com/marliaren/fcc-product-landing"
+  },
+  {
+    "title": "Dr. Borlaug Tribute Page",
+    "imageSrc": "projects/tribute-page.png",
+    "description": "A tribute page for Dr. Norman Borlaug developed for the projects required by FCC to acquire the Responsive Web Design Certification.",
+    "skills": ["HTML", "CSS"],
+    "demo": "https://marliaren.github.io/fcc-tribute-page/",
+    "source": "https://github.com/marliaren/fcc-tribute-page"
+  }
+]

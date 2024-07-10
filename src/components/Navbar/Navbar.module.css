@@ -1,0 +1,173 @@
+@import "../../vars.css";
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 90px;
+  z-index: 5;
+  background-color: var(--bgcolor);
+}
+
+.navbarWithShadow {
+  box-shadow: 0 0 7px 0 var(--shadownav);
+}
+
+/* marliaren and jap text */
+.title {
+  text-decoration: none;
+  color: var(--textcolor);
+  text-align: center;
+  letter-spacing: 3px;
+  transition: all ease-in-out 600ms;
+}
+
+.title:hover {
+  transform: scale(1.1);
+}
+
+.logoname {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: -8px;
+}
+
+.japtext {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--secondarytext);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menuBtn {
+  display: none;
+  border: none;
+  background-color: none;
+}
+
+.menuBtn svg {
+  fill: var(--textcolor);
+  width: 35px;
+}
+.menuItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.menuItems a {
+  text-decoration: none;
+  color: var(--lightertext);
+  font-size: 1.8rem;
+  transition: all ease-in-out 300ms;
+}
+
+.menuItems a:hover,
+.menuItems a.active {
+  color: var(--textcolor);
+  font-weight: 600;
+}
+
+.nightMode {
+  background-color: var(--primarycolor);
+  border-radius: 50%;
+  padding: 10px;
+  width: fit-content;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: dotted 2px var(--secondarytext);
+  fill: var(--textcolor);
+}
+
+.nightMode svg {
+  width: 15px;
+}
+
+.nightMode:hover {
+  box-shadow: 0 0 5px 2px var(--secondarytext);
+}
+
+@media screen and (max-width: 685px) {
+  .navbar {
+    padding: 30px 55px;
+    /* flex-direction: column; */
+    align-items: flex-start;
+  }
+
+  .menu {
+    position: absolute;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 3;
+    margin: 5px 45px;
+  }
+
+  .menuBtn {
+    display: block;
+    cursor: pointer;
+    background: none;
+  }
+
+  .nightMode {
+    margin: 5px 45px 0 0;
+  }
+
+  /* nav menu will appear when burger menu is clicked */
+  .menuItems {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    border-radius: 10px;
+    background: var(--primarycolor);
+    background: linear-gradient(
+      180deg,
+      var(--primarycolor) 0%,
+      var(--secondarycolor) 100%
+    );
+    padding: 20px 30px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    width: 200px;
+    transition: 0.5s;
+  }
+
+  .menuItems a:hover {
+    color: var(--textcolor);
+  }
+
+  /* show menu */
+  .menuOpen {
+    display: flex;
+    z-index: 3;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .logoname {
+    font-size: 2rem;
+  }
+
+  .japtext {
+    font-size: 1.1rem;
+  }
+
+  .menuBtn svg {
+    width: 34px;
+  }
+}

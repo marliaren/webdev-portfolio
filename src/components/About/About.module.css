@@ -1,0 +1,385 @@
+@import "../../vars.css";
+
+* {
+  color: var(--textcolor);
+}
+
+.aboutSection {
+  min-height: 100vh;
+  width: 100%;
+  padding: 30px 80px;
+}
+
+.container {
+  position: relative;
+  border-radius: 20px;
+  padding: 30px 20px;
+  background-color: var(--primarycolor);
+  box-shadow: 0 0 2px var(--secondarytext);
+  z-index: 1;
+}
+
+.aboutContent {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.aboutMepic {
+  width: 25%;
+  border-radius: 10px;
+  flex-basis: 40%;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 60%;
+  flex-wrap: wrap;
+}
+
+/* web dev text */
+.webdev {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 15px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.toolsLogo {
+  width: 50px;
+  height: auto;
+}
+
+/* tools with the text */
+.tool {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.toolsContainer {
+  background-color: var(--secondarycolor);
+  /* background-color: #242554; */
+  box-shadow: 0 0 3px var(--secondarytext);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+}
+
+/* text of tools */
+.tools p {
+  margin-top: 5px;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+/* web paragraph */
+.aboutWeb {
+  font-size: 1.8rem;
+  color: var(--textcolor);
+  text-align: center;
+  line-height: 3rem;
+}
+
+/* education */
+
+/* Education title */
+.educ {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 70px 0 15px;
+}
+
+/* educ / certification boxes */
+.educIcon {
+  display: flex;
+  column-gap: 20px;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutEduc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-basis: 50%;
+}
+
+.educContainer {
+  margin-top: 10px;
+  width: 100%;
+  height: 140px;
+  padding: 20px 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px var(--secondarytext);
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+
+  background-image: linear-gradient(
+    90deg,
+    var(--secondarytext) 0%,
+    var(--secondarytext) 60%,
+    var(--primarycolor) 100%
+  );
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: 0.4s;
+}
+
+.iconContainer {
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--textcolor);
+}
+
+.iconContainer svg {
+  width: 26px;
+  height: 26px;
+  fill: var(--primarycolor);
+}
+
+.schoolYear,
+.schoolName,
+.dateYear,
+.orgCertification {
+  font-size: 1.7rem;
+}
+
+.schoolYear,
+.dateYear {
+  font-weight: 400;
+}
+
+.schoolName,
+.orgCertification {
+  font-weight: 600;
+}
+
+.courseTrack,
+.certCredentials {
+  font-size: 1.6rem;
+  color: var(--secondarytext);
+}
+
+.educContainer:hover {
+  background-size: 100% 100%;
+}
+
+.certCredentials {
+  word-break: break-all;
+}
+
+.educContainer:hover .schoolYear,
+.educContainer:hover .schoolName,
+.educContainer:hover .courseTrack,
+.educContainer:hover .dateYear,
+.educContainer:hover .orgCertification,
+.educContainer:hover .certCredentials {
+  color: var(--primarycolor);
+}
+
+.educContainer:hover .iconContainer {
+  background-color: var(--primarycolor);
+}
+
+.educContainer:hover .iconContainer svg {
+  fill: var(--textcolor);
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutContent {
+    flex-direction: column;
+  }
+
+  .aboutMepic {
+    width: 50%;
+  }
+
+  .webdev {
+    margin-top: -15px;
+  }
+
+  .educContainer {
+    height: 160px;
+    padding: 20px 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .educIcon {
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .educ {
+    margin: 50px 0 15px;
+  }
+
+  .gradpic {
+    display: block;
+    margin: -20px auto;
+    width: 50%;
+    flex-basis: 50%;
+  }
+
+  .aboutEduc {
+    flex-basis: 100%;
+  }
+
+  .educContainer {
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  /* web paragraph */
+  .aboutWeb {
+    font-size: 1.7rem;
+  }
+
+  .toolsContainer {
+    width: 65px;
+    height: 65px;
+  }
+
+  .toolsLogo {
+    width: 45px;
+  }
+
+  .gradpic {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .toolsContainer {
+    width: 60px;
+    height: 60px;
+  }
+
+  .toolsLogo {
+    width: 40px;
+  }
+
+  /* web paragraph */
+  .aboutWeb {
+    font-size: 1.6rem;
+  }
+
+  .aboutSection {
+    padding: 10px 50px;
+  }
+
+  .aboutMepic {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  h2 {
+    font-size: 3.3rem;
+  }
+
+  .webdev {
+    font-size: 3.2rem;
+  }
+
+  /* education texts */
+  .schoolYear,
+  .schoolName,
+  .dateYear,
+  .orgCertification {
+    font-size: 1.6rem;
+  }
+  .courseTrack,
+  .certCredentials {
+    font-size: 1.4rem;
+  }
+
+  .aboutMepic {
+    width: 80%;
+  }
+
+  .educ {
+    font-size: 2.6rem;
+  }
+
+  .educContainer {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutSection {
+    padding: 30px 0;
+  }
+
+  .container {
+    border-radius: 0;
+    padding: 30px 50px;
+    box-shadow: 0 var(--primarycolor);
+  }
+}
+
+@media screen and (max-width: 520px) {
+  h2 {
+    font-size: 3.1rem;
+  }
+
+  .aboutMepic {
+    width: 85%;
+  }
+
+  .webdev {
+    font-size: 2.8rem;
+  }
+
+  /* Education text */
+  .educ {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .toolsContainer {
+    width: 53px;
+    height: 53px;
+  }
+
+  .toolsLogo {
+    width: 38px;
+  }
+
+  /* text of tools */
+  .tools p {
+    font-size: 1.2rem;
+  }
+
+  /* education texts */
+  .schoolYear,
+  .schoolName,
+  .dateYear,
+  .orgCertification {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,25 @@
+/* variables */
+:root {
+  /* for dark mode by default */
+  --bgcolor: #212121;
+  --textcolor: #fff;
+  --secondarytext: #bcbcbc;
+  --lightertext: #b4b4b4;
+
+  --primarycolor: #000000;
+  --secondarycolor: #464646;
+  --shadownav: rgba(120, 120, 120, 0.5);
+  --blureffect: rgb(49, 50, 52);
+}
+
+/* for light mode */
+[data-theme="light"] {
+  --bgcolor: #f1f1f1;
+  --textcolor: #000;
+  --secondarytext: #353535;
+  --lightertext: #454545;
+
+  --primarycolor: #ffffff;
+  --secondarycolor: #c0c0c0;
+  --shadownav: rgba(76, 76, 76, 0.8);
+}

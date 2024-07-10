@@ -1,0 +1,38 @@
+[
+  {
+    "title": "HTML",
+    "imageSrc": "techstack/icons8-html5-60.png"
+  },
+  {
+    "title": "CSS",
+    "imageSrc": "techstack/icons8-css3-60.png"
+  },
+  {
+    "title": "JavaScript",
+    "imageSrc": "techstack/icons8-javascript-60.png"
+  },
+  {
+    "title": "Bootstrap",
+    "imageSrc": "techstack/icons8-bootstrap-60.png"
+  },
+  {
+    "title": "React",
+    "imageSrc": "techstack/icons8-react-60.png"
+  },
+  {
+    "title": "PHP",
+    "imageSrc": "techstack/icons8-php-logo-50.png"
+  },
+  {
+    "title": "MySQL",
+    "imageSrc": "techstack/icons8-mysql-logo-60.png"
+  },
+  {
+    "title": "Firebase",
+    "imageSrc": "techstack/icons8-google-firebase-console-60.png"
+  },
+  {
+    "title": "Git",
+    "imageSrc": "techstack/icons8-git-60.png"
+  }
+]
