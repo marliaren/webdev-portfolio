@@ -27,7 +27,7 @@ const App = () => {
   }, []);
   return (
     <ThemeSelect>
-      <Router>
+      <Router basename="/webdev-portfolio">
         <AppContent />
       </Router>
     </ThemeSelect>
